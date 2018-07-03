@@ -1,0 +1,9 @@
+Flask
+flask-appconfig>=0.10
+flask-bootstrap
+flask-nav
+flask-debug
+flask-wtf
+
+requests==2.18.4
+retrying==1.3.3
