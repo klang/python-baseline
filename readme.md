@@ -33,6 +33,12 @@ https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-works
     FLASK_ENV=development FLASK_APP=tools/hello.py flask run
     
 
+## virtual environment using `pipenv` on mac
+
+https://www.youtube.com/watch?v=GBQAKldqgZs
+
+..
+
 # intellij evironment
 
 "File" -> "Project Structure..." -> "Project"

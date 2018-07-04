@@ -5,5 +5,13 @@ flask-nav
 flask-debug
 flask-wtf
 
-requests==2.18.4
+#requests==2.18.4
 retrying==1.3.3
+
+
+certifi==2018.4.16
+chardet==3.0.4
+idna==2.7
+requests==2.19.1
+urllib3==1.23
+coverage
