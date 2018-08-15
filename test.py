@@ -1,6 +1,5 @@
 from sample import sum, sum_only_positive
 
-
 def test_sum():
     assert sum(5, 5) == 10
 

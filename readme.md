@@ -57,3 +57,23 @@ Write the path to the environment you want
     
 If an `requirements.txt` file is present, IntelliJ will install the requirements in the environment selected.
 
+# Code Coverage
+
+https://stackoverflow.com/questions/36517137/how-to-properly-use-coverage-py-in-python
+
+
+    (baseline) iam[klang@bascule python-baseline]$ coverage run test.py
+    (baseline) iam[klang@bascule python-baseline]$ coverage run sample.py
+    6
+    6
+    None
+    (baseline) iam[klang@bascule python-baseline]$ coverage report -m
+    Name        Stmts   Miss  Cover   Missing
+    -----------------------------------------
+    sample.py      10      3    70%   13-15
+    test.py        11      0   100%
+    -----------------------------------------
+    TOTAL          21      3    86%
+
+To integrate with IntelliJ, start with https://blog.jetbrains.com/pycharm/2015/06/feature-spotlight-python-code-coverage-with-pycharm/
+
