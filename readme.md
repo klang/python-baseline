@@ -39,7 +39,7 @@ https://www.youtube.com/watch?v=GBQAKldqgZs
 
 ..
 
-# intellij evironment
+# IntelliJ environment
 
 "File" -> "Project Structure..." -> "Project"
 
@@ -62,18 +62,21 @@ If an `requirements.txt` file is present, IntelliJ will install the requirements
 https://stackoverflow.com/questions/36517137/how-to-properly-use-coverage-py-in-python
 
 
-    (baseline) iam[klang@bascule python-baseline]$ coverage run test.py
-    (baseline) iam[klang@bascule python-baseline]$ coverage run sample.py
-    6
-    6
-    None
+    (baseline) iam[klang@bascule python-baseline]$ coverage run test-sample.py
+    ...
+    ----------------------------------------------------------------------
+    Ran 3 tests in 0.000s
+    
+    OK
     (baseline) iam[klang@bascule python-baseline]$ coverage report -m
-    Name        Stmts   Miss  Cover   Missing
-    -----------------------------------------
-    sample.py      10      3    70%   13-15
-    test.py        11      0   100%
-    -----------------------------------------
-    TOTAL          21      3    86%
+    Name             Stmts   Miss  Cover   Missing
+    ----------------------------------------------
+    sample.py            6      0   100%
+    test-sample.py      11      0   100%
+    ----------------------------------------------
+    TOTAL               17      0   100%
 
+The coverage reported by IntelliJ may be a bit different.
+    
 To integrate with IntelliJ, start with https://blog.jetbrains.com/pycharm/2015/06/feature-spotlight-python-code-coverage-with-pycharm/
 

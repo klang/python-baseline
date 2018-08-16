@@ -14,5 +14,7 @@ class TestSample(unittest.TestCase):
         self.assertIsNone(sum_only_positive(-1, 2))
 
 
+# adding these two lines, will reduce cover to 90% when run from inside IntelliJ, but increase it to 100% when run from
+# the command line.
 if __name__ == "__main__":
     unittest.main()
