@@ -77,6 +77,27 @@ https://stackoverflow.com/questions/36517137/how-to-properly-use-coverage-py-in-
     TOTAL               17      0   100%
 
 The coverage reported by IntelliJ may be a bit different.
-    
-To integrate with IntelliJ, start with https://blog.jetbrains.com/pycharm/2015/06/feature-spotlight-python-code-coverage-with-pycharm/
 
+## IntelliJ run configuration
+
+First, we need to trick IntelliJ into making a Run Configuration for us:
+
+![run unit tests in test-sample](./docs/3.run-unit-tests-in-test-sample.png)
+
+We can save this configuration for future use:
+
+![save run configuration](./docs/4.save-run-configuration.png)
+
+Now we can run the unittests with Coverage:
+
+![run with coverage](./docs/5.run-with-coverage.png)
+    
+IntelliJ will pop up a window telling the coverage of each file:
+
+![coverage results](./docs/6.coverage-results.png)
+
+Of course, 100% coverage isn't really possible, when we have selected to be able to run this specific file from the command line as well. That means, that the coverage percentage has to be taken with a grain of salt.
+
+![test-sample is 90 % covered](./docs/7.90-percent.png)
+
+All this was inspired by this [blog post](https://blog.jetbrains.com/pycharm/2015/06/feature-spotlight-python-code-coverage-with-pycharm/) and adapted to the latest version of IntelliJ.
