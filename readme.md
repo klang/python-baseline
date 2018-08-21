@@ -29,8 +29,8 @@ https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-works
     pyenv virtualenv 3.6.5 baseline-flask
     pyenv activate baseline-flask
     export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-    pip install -r requirements.txt
-    FLASK_ENV=development FLASK_APP=tools/hello.py flask run
+    pip install Flask
+    FLASK_ENV=development FLASK_APP=mock-url-signer.py flask run
     
 
 ## virtual environment using `pipenv` on mac
@@ -101,3 +101,14 @@ Of course, 100% coverage isn't really possible, when we have selected to be able
 ![test-sample is 90 % covered](./docs/7.90-percent.png)
 
 All this was inspired by this [blog post](https://blog.jetbrains.com/pycharm/2015/06/feature-spotlight-python-code-coverage-with-pycharm/) and adapted to the latest version of IntelliJ.
+
+# flask
+
+    pyenv virtualenv 3.6.5 baseline-flask
+    pyenv activate baseline-flask
+    export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+    pip install Flask
+    FLASK_ENV=development FLASK_APP=mock-url-signer.py flask run
+
+    
+    
