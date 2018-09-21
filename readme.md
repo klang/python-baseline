@@ -111,4 +111,25 @@ All this was inspired by this [blog post](https://blog.jetbrains.com/pycharm/201
     FLASK_ENV=development FLASK_APP=mock-url-signer.py flask run
 
     
+## flask-bootstrap and flask-socket
+
+An example frontend is represented in `flask-bootstrap` and can be started with
+
+    flask --app=flask-bootstrap dev -p 5001
+    
+This fronten is supposed to communicate with a backend represented in `flask-socket` that can 
+be started with
+
+    cd flask-socket
+    python app.py
+    
+    
+    
+:: TODO :: start this as a proper, separate flask-app 
+
+    flask --app=flask-socket dev -p 5000
+    
+This does NOT work as it's supposed to .
+
+:: TODO ::  https://github.com/mbr/flask-appconfig
     
